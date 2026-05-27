@@ -1,0 +1,201 @@
+
+<!-- Página 4 (formulário) de Diana Domingues Araújo - @veganadatattoo -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Formulário - @veganadatattoo</title>
+
+<!-- Metadados -->
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Vegana da Tattoo">
+    <meta name="keywords" content="Veganismo, Ativismo">
+    <meta name="author" content="Diana Domingues Araújo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Arquivo CSS externo -->
+	<link href="./css/estilo.css" rel="stylesheet">
+
+<!-- Favicon -->
+	<link href="./imagens/favicon.png" rel="icon">
+
+</head>
+
+
+<!-- Marcação de topo para guiar o botão que acompanha o scroll -->
+<body id="topo">
+
+
+<!-- Header com logo e menu de navegação para todas as páginas-->
+<header>
+	<div id="cabecalho" class="grupo">
+		<a href="index.html" id="logo">
+		   	<img src="./imagens/logo.png" alt="Logomarca do site" title="Logo">
+		</a>
+
+<!-- Botão de "topo" que acompanha o scroll -->
+		<a href="#topo" id="botao-topo">
+   			 ↑
+		</a>
+
+		<nav class="menu-principal">
+			<ul class="grupo">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="pag2.html">Conceitos</a>
+				</li>
+				<li>
+					<a href="pag3.html">Produções</a>
+				</li>
+
+<!-- Página "Formulário" ativa indicada com um destaque -->
+
+				<li>
+					<a class="ativo" href="pag4.html">Formulario</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main>
+	
+	<div id="conteudo" class="grupo">
+
+<!-- Conteudo principal com "Section" -->
+		<section id="conteudo-principal">
+
+				<h1>Entre em contato para saber mais:</h1>
+				<br>
+
+			<form action="#" method="post">
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">1) Nome:*</label>
+                <input type="text" id="nome" name="nome" required value="">
+            </div>
+
+        </fieldset>
+        <div class="campo">
+            <label>2) É vegan?</label>
+            <label>
+                <input type="radio" name="vegan" value="Sim"> Sim.
+            </label>
+            <label>
+                <input type="radio" name="vegan" value="nao"> Ainda não.
+            </label>
+   
+            <label>
+                <input type="radio" name="vegan" value="naonao"> Não.
+            </label>
+        </div>
+        <div class="campo">
+            <label for="email">3) E-mail:*</label>
+            <input type="email" id="email" name="email" required value="">
+        </div>
+        <div class="campo">
+            <label for="telefone">4) Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" value="">
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="objetivo">5) Objetivo:</label>
+                <select name="objetivo" id="objetivo">
+                    <option value="">--</option>
+                    <option value="1">Conhecer mais sobre o movimento</option>
+                    <option value="2">Criar laços com outros veganos</option>
+                    <option value="3">Divulgar meu material</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <div class="campo">
+            <label for="mensagem">6) Mensagem:*</label>
+            <textarea rows="3" id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <br>
+     
+        <div class="campo checkbox">
+    	<label>7) Mais informações?
+        <input type="checkbox" name="newsletter" value="1">
+        Gostaria de receber mais informações sobre o movimento vegano
+    	</label>
+		</div>
+		<br>
+           
+        <button type="submit" name="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    
+        
+
+</form>
+		
+		</section>
+
+<!-- Conteudo secundário com "Aside" -->
+				<aside id="sidebar">
+			<h1>Sobre o Projeto</h1>
+				
+			<p>
+			
+				O Vegana da Tattoo surgiu em 2018, no Instagram, como um projeto fotográfico em que eram publicadas imagens com o objetivo de divulgar um veganismo simples e acessível, vivenciado por uma adolescente em uma cidade de interior de cerca de 18 mil habitantes.
+			<br>
+				Sua base é ser uma voz em defesa da luta antiespecista, através de um veganismo popular, abolicionista e interseccional.
+			<br> 
+	
+			<div id="foto-sidebar"></div>
+			
+			<br>
+		</aside>
+	</div>
+</main>
+
+<!-- Conteudo de rodapé com "Footer" que contém informações de contato e links úteis (que são abertos em nova aba). -->
+         <footer id="rodape" class="grupo">
+			<p id="telefone-email">
+				Para mais informações:
+				<br>
+				veganadatattoo@hotmail.com
+				<br>
+				(53) 98414-0790
+				<br>
+				Arroio Grande, RS (Brasil)
+			</p>
+
+			<p id="redes-sociais">
+				Acompanhe nas redes sociais:
+				<br>
+				<br>
+				<a href="https://instagram.com/veganadatattoo" target="_blank"> <img src="./imagens/instagram.png" alt="Instagram" class="icone-rede"> Instagram
+				</a> 
+				<br>
+				<a href="https://tiktok.com/@veganadatattoo" target="_blank"> <img src="./imagens/tiktok.png" alt="Tiktok" class="icone-rede"> Tiktok
+				</a> 
+
+				<br>
+			</p>
+
+			<p id="assinatura">
+				Trabalho de HTML e CSS
+				<br>
+				desenvolvido para a disciplina
+				<br>
+				de Linguagem de Programação Web do
+				<br>
+				Curso Superior de Sistemas para Internet.
+				<br>
+				IFSul - Campus Pelotas (maio de 2026).
+				<br>
+			</p>
+
+			<small id="copyright">
+				&copy; @veganadatattoo - Diana Domingues Araújo
+			</small>
+		</footer>
+</body>
+</html>

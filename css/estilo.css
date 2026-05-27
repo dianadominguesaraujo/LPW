@@ -1,0 +1,512 @@
+/*
+-- CSS - Diana Domingues Araújo - @veganadatattoo
+*/
+
+/*
+-- Padrões e Reset
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+
+/*
+-- Tipografia e Cores
+(alguns exemplos com classe, outros com id)
+*/
+
+body {
+    font-family: verdana, sans-serif;
+}
+
+
+/*-- Menu principal*/
+
+.menu-principal {
+    position: absolute;
+}
+
+.menu-principal li {
+    display: inline;
+}
+
+.menu-principal a {
+
+/*--Efeito de transição*/
+    transition: 0.6s;
+
+/*--Cursor do mouse*/
+    cursor: pointer;
+
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 3.15em 0.625em 0em 0em;
+    padding: 0.625em;
+    border-style: solid;
+    background-color: #047d03;
+    min-width: 4em;
+}
+
+.menu-principal a:hover {
+    color: darkslategrey;
+    text-decoration: underline;
+    border-style: solid;
+    border-color: darkseagreen;
+    background-color: whitesmoke;
+}
+
+.menu-principal a.ativo {
+    font-weight: bold;
+    background-color: whitesmoke;
+    color: #0f6d0e;
+    border-style: solid;
+    border-color: #0f6d0e;
+
+}
+
+.menu-principal a.ativo:hover {
+    font-weight: bold;
+    background-color: #0f6d0e;
+    color: whitesmoke;
+}
+
+
+/*-- Estrutura*/
+
+#conteudo {
+    width: 90%;
+    max-width: 70.3125em;
+    min-width: 20em;
+    margin: 1.875em auto;
+}
+
+#foto-principal {
+    height: 25em;
+    background-image: url("../imagens/principal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 0.125em solid #047d03;
+    border-bottom: 0.125em solid #047d03;
+}
+
+#rodape {
+    background: #047d03;
+    width: 90%;
+    max-width: 70.3125em;
+    min-width: 20em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#cabecalho {
+    position: relative;
+    width: 90%;
+    max-width: 68.75em;
+    min-width: 20em;
+    margin: 0 auto;
+}
+
+#logo {
+    display: inline;
+    float: right;
+}
+
+#logo img {
+    display: inline;
+    width: 100%;
+    max-width: 18.75em;
+    min-width: 10em;
+    top: 1.625em;
+    left: 0;
+    position: relative;
+}
+
+#conteudo-principal {
+    float: right;
+    width: 67%;
+    max-width: 47.5em;
+    min-width: 18em;
+    padding: 1.875em;
+}
+
+#sidebar {
+    float: left;
+    width: 26%;
+    max-width: 18.75em;
+    min-width: 14em;
+    background: #414140;
+    color: #FFF;
+}
+
+/*-- Parágrafos*/
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+
+/*-- Conteúdos*/
+
+#conteudo-principal h1 {
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: #414140;
+}
+
+#conteudo-principal h2,
+#sidebar h1 {
+
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#sidebar p {
+    font-size: 1em;
+    text-align: justify;
+
+}
+
+#foto-sidebar {
+    width: 100%;
+    max-width: 54em;
+    min-width: 8em;
+    height: 12em;
+    background-image: url("../imagens/sidebar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+#conteudo-principal ul,
+#conteudo-principal ol {
+
+    font-size: 1em;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+
+/* Botão fixo */
+
+#botao-topo {
+
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    background-color: #047d03;
+    color: #fff;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 0.125em solid white;
+
+/*Garante que o botão fique na frente dos outros elementos*/
+    z-index: 1000;
+
+}
+
+#botao-topo:hover {
+
+    background-color: white;
+    color: #047d03;
+    border-style: solid;
+    border-color: #047d03;
+    transition: 0.3s;
+}
+
+
+/*
+-- Outros estilos específicos
+*/
+
+#telefone-email {
+
+    float: left;
+    font-size: 0.875em;
+    color: #FFF;
+    margin: 0.375em 0.3125em;
+    padding: 0.25em;
+    max-width: 18em;
+}
+
+#copyright {
+
+    font-size: 0.6875em;
+    color: #d9d9d9;
+}
+
+#assinatura {
+
+    text-align: center;
+    font-size: 0.875em;
+    color: #FFF;
+    max-width: 25em;
+    margin: 0 auto;
+}
+
+.icone-rede {
+
+    width: 100%;
+    max-width: 1.05em;
+    min-width: 1em;
+}
+
+#redes-sociais {
+
+    float: right;
+    text-align: center;
+    font-size: 0.875em;
+    color: #FFF;
+    margin-top: 0.125em;
+    margin-right: 2.5em;
+    padding: 0.125em;
+    max-width: 12em;
+}
+
+.video-projeto {
+
+    width: 25%;
+    max-width: 30em;
+    border: 0.2em solid #047d03;
+    border-radius: 1em;
+    margin: 2em auto;
+    
+}
+
+#redes-sociais a {
+
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Clearfix usada para corrigir problemas de layout */
+
+.grupo::before,
+.grupo::after {
+
+    content: " ";
+    display: block;
+}
+
+.grupo::after {
+    clear: both;
+}
+
+
+/*-- Tabela da página 2*/
+
+caption {
+    color: black;
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 28em;
+    max-width: 70em;
+    background-color: whitesmoke;
+    color: #414140;
+}
+
+td {
+
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 0.1875em solid #ddd;
+}
+
+th {
+
+    padding: 1em;
+    text-align: center;
+    border-bottom: 0.1875em solid #ddd;
+    background-color: whitesmoke;
+    color: #047d03;
+    text-decoration: underline;
+}
+
+tr:hover {
+
+    background-color: #047d03;
+    color: whitesmoke;
+}
+
+
+/*-- Lista da página 3*/
+
+.lista {
+    margin: 2em;
+  
+}
+
+
+.lista li {
+
+    background-color: whitesmoke;
+    color: #414140;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.625em;
+    transition: 0.4s;
+    min-width: 10em;
+}
+
+.lista li:nth-child(odd) {
+
+    background-color: white;
+    color: #047d03;
+
+}
+
+
+.lista li:hover {
+
+    transform: scale(1.03);
+    background-color: whitesmoke;
+    color: #047d03;
+    cursor: pointer;
+}
+
+.lista li::before {
+
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.5em;
+    background-image: url("../imagens/favicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lista li a {
+
+    color: #047d03;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.lista li a:hover {
+
+    color: #222;
+    text-decoration: underline;
+}
+
+/*-- Formulário da página 4*/
+
+fieldset {
+    border: none;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.campo label {
+    display: inline-block;
+    width: 7em;
+
+}
+
+fieldset.grupo .campo {
+
+    float: left;
+    margin-right: 2.5em;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel] {
+
+    width: 60%;
+    min-width: 10em;
+    padding: 0.3em 1em;
+    margin: 0.9em;
+    margin-left: 1em;
+    border: solid;
+    background-color: #047d03;
+    color: white;
+}
+
+button[type=submit],
+button[type=reset] {
+
+    background-color: #047d03;
+    border: none;
+    color: white;
+    padding: 1.125em 1.625em;
+    margin: 0.25em 0.125em;
+    min-width: 8em;
+}
+
+.campo input[type=text],
+.campo input[type=email],
+.campo input[type=tel],
+.campo textarea,
+.campo select {
+
+    width: 20em;
+    padding: 0.5em;
+    margin: 0.3em 0;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    max-width: 20em;
+}
+
+.checkbox label {
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Seletor de quatro níveis que altera a cor do campo de texto quando o mouse passa sobre ele dentro do formulário */
+#conteudo-principal form .campo input:hover {
+    background-color: whitesmoke;
+    color: black;
+}
